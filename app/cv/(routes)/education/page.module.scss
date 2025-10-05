@@ -1,0 +1,19 @@
+.education {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__titlebox {
+    text-align: end;
+    padding: 3rem;
+  }
+
+  &__pagetitle {
+    font-size: 3rem;
+    color: #d4b44f;
+  }
+}

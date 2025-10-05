@@ -1,0 +1,20 @@
+.projects {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3.125rem 5rem 2.5rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 1.25rem;
+
+  &__titlebox {
+    text-align: end;
+    padding: 3rem;
+  }
+
+  &__pagetitle {
+    font-size: 3rem;
+    color: #d4b44f;
+  }
+}

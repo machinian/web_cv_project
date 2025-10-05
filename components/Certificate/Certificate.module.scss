@@ -1,0 +1,28 @@
+.certificate {
+  &__title {
+    font-size: 0.938rem;
+    padding-bottom: 0.5rem;
+    color: #f4e6c2;
+  }
+
+  &__description {
+    font-style: italic;
+    padding-bottom: 0.125rem;
+  }
+
+  &__link {
+    text-decoration: underline;
+
+    &:hover {
+      color: #d4b44f;
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .certificate {
+    &__title {
+      font-size: 1.4rem;
+    }
+  }
+}

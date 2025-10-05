@@ -1,0 +1,71 @@
+.button {
+  width: 9rem;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  padding: 0.625rem 1.25rem 0.625rem 0.625rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: start;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #000;
+  color: #d4b44f;
+  transition: width 0.3s ease;
+}
+
+.label {
+  position: relative;
+  z-index: 2;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #d4b44f;
+  z-index: 0;
+  transition: width 0.3s ease;
+}
+
+.button:hover::before {
+  width: 100%;
+}
+
+.button:hover {
+  color: #000;
+  font-weight: bold;
+  transition: width 0.3s ease;
+}
+
+.label::after {
+  content: url(../../assets/arrow.svg);
+  position: absolute;
+  top: 60%;
+  right: 0;
+  transform: translate(100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.button:hover .label::after {
+  opacity: 1;
+}
+
+@media all and (max-width: 1200px) {
+  .button {
+    width: 8rem;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .button {
+    width: 16rem;
+    font-size: 2rem;
+  }
+}
